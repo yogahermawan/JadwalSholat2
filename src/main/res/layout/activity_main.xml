@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <ImageView
+            android:layout_width="419dp"
+            android:layout_height="300dp"
+            android:src="@drawable/sholat"
+            tools:layout_editor_absoluteY="3dp" tools:layout_editor_absoluteX="-6dp" android:id="@+id/imageView"
+            tools:ignore="MissingConstraints"/>
+
+    <TextView
+            android:text="وَأَقِيمُوا۟ لصَّلَوٰةَ وَءَاتُوا۟ لزَّكَوٰةَ و َرْكَعُوا۟ مَعَ لرَّٰكِعِينَ"
+            android:layout_width="404dp"
+            android:layout_height="47dp" android:id="@+id/textView"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="3dp"
+            android:layout_marginTop="580px"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout" android:textSize="24dp"/>
+
+    <LinearLayout
+
+            android:padding="10px"
+            android:orientation="vertical"
+            android:layout_width="413dp"
+            android:layout_height="912dp"
+            tools:ignore="MissingConstraints" tools:layout_editor_absoluteY="347dp"
+            tools:layout_editor_absoluteX="-6dp" android:id="@+id/linearLayout">
+
+        <Spinner
+                android:layout_marginTop="650px"
+                android:id="@+id/kota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tv_tanggal"
+                    android:text="Tanggal"
+                    android:layout_marginBottom="40px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:text="Subuh"
+                        android:textSize="30px"
+                        android:layout_marginBottom="30px"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:id="@+id/tv_subuh"
+                        android:text="12"
+                        android:layout_marginBottom="15px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:textSize="30px"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:text="Dzuhur"
+                        android:layout_marginBottom="30px"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content" android:textSize="30px"/>
+
+                <TextView
+                        android:id="@+id/tv_dzuhur"
+                        android:text="12"
+                        android:layout_marginBottom="10px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:textSize="30px"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:text="Ashar"
+                        android:layout_marginBottom="30px"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content" android:textSize="30px"/>
+
+                <TextView
+                        android:id="@+id/tv_ashar"
+                        android:text="12"
+                        android:layout_marginBottom="10px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:textSize="30px"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:text="Maghrib"
+                        android:layout_marginBottom="30px"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content" android:textSize="30px"/>
+
+                <TextView
+                        android:id="@+id/tv_maghrib"
+                        android:text="12"
+                        android:layout_marginBottom="50px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:textSize="30px"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:text="Isya"
+                        android:layout_marginBottom="30px"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content" android:textSize="30px"/>
+
+                <TextView
+                        android:id="@+id/tv_isya"
+                        android:text="12"
+                        android:layout_marginBottom="10px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:textSize="30px"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
